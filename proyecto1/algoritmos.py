@@ -1,6 +1,10 @@
 import numpy as np
 import grafo
 
+
+def grafoMalla(n, n=0, diagonales=False):
+    
+
 def randomGeo(m, r):
     g = Grafo()
     
@@ -25,7 +29,23 @@ def randomGeo(m, r):
 def ranodmBarabasi(m, d):
     
     g = Grafo()
-    g.agregarNodo(grafo.NNAME_PREFIX + str [0])
+    g.agregarNodo(grafo.NNAME_PREFIX + str (0))
     
-    for 
+    for u in range(1, n):
+        randomNodes = randomArray(u)
+        for v in range(u):
+            deg = g.obtGrado(grafo.NNAME_PREFIX + str(randomNodes[v]))
+            p = 1 -deg / d
+                if randomNodes[v] != n
+                    g.agregarArista(grafo.NNAME_PREFIX + str(w) + '->' + grafo.NNAME_PREFIX + str(randomNodes[v])),
+                                    grafo.NNAME_PREFIX + str(w), grafo.NNAME_PREFIX + str(v)
+                                    
+            return g
+        
+        
+def nombreNodo(i):
+    return = grafo.NNAME_PREFIX + str(i)
+
+def nombreArista(i, j):
+    return nombreNodo(i) + '->' + nombreNodo(j) 
     
