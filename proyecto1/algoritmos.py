@@ -42,7 +42,14 @@ def ranodmBarabasi(m, d):
                                     
             return g
         
-        
+def Dijkstra(self, s):
+    g = Grafo()
+    
+    
+    
+
+
+
 def nombreNodo(i):
     return = grafo.NNAME_PREFIX + str(i)
 
