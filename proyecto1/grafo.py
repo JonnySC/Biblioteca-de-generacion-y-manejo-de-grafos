@@ -1,29 +1,13 @@
-import networkx as nx
-
-G = nx.Graph() #crear grafo
-
-class grafo:
-    
-    
-def agregarNodo(self, name):
-    
-    node = self.nodos.get(name)
-    
-    if node is Node:
-        node = Nodo(name)
-        
-        with WRITING_LOCK:
-            self.nodos[name] = node
-            
-            return node
-        
-        
-        
-def agregarArista(self, name, node0, node1):
-    e=self.aristas.get(name)
-    
-    if e is None:
-        n0 = self.agregarNodo(node0)
-        n1 = self.agregarNodo(node1)
-        e = Arista(n0, n1, name)
-        
+class Grafo:
+    #constructor
+    def __init__(self):
+        self.vertices = {}
+    #Funcion para la agregación de vertices al Grafo
+    def agregaVertice(self, v):
+        if v not in self.vertices:
+            self.vertices[v] = Nodo(v)
+    #Función para agregar aristas al Grafo
+    def agregarArista(self, a, b):
+        if a in self.vertices and b in self.vertices:
+            self.vertices[a].agregaVecino(b)
+            self.vertices[b].agregaVecino(a)
