@@ -1,12 +1,9 @@
-class arista:
-    def __init__(self, source, target, id):
-        
-        self.n0 =source
-        self.n1 = target
-        self.id = id
-        
-        
-        
-    def __str__(self):
-        return self.id
-    def
+class Arista:
+    #constructor
+    def __init__(self):
+        self.id = 0
+    #Funcion para agregar aristas al Grafo
+    def agregarArista(self, a, b):
+        if a in self.vertices and b in self.vertices:
+            self.vertices[a].agregaVecino(b)
+            self.vertices[b].agregaVecino(a)
