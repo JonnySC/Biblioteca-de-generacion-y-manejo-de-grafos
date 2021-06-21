@@ -1,6 +1,7 @@
-import nodo 
-import arista
-import grafo
+from nodo import nodo 
+from arista import arista
+from grafo import grafo
+from graphviz import graphviz
 
 #Funcion principal de llamado del programa
 def main():
