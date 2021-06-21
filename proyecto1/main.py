@@ -1,9 +1,19 @@
+import nodo 
+import arista
+import grafo
 
-def print_hi(name):
-   
-    print(f'Hi, {name}')  
+#Funcion principal de llamado del programa
+def main():
+    #Lamado a clase del modelo
+    a = Malla()
+    b = Erdosrenyi()
+    c = Gilbert()
+    d =
 
-if __name__ == '__main__':
-    print_hi('Se esta tranajando actualmente en la Biblioteca "Trabajo en curso" ')
-
-
+    #ejecución de la funcion del modelo
+    a.malla()
+    #Se ejecuta erdos que a su vez devuelve las cadenas de vertices y aristas
+    #a variables para poder ser usadas en otras clases o funciones
+    l, l3 = b.erdosrenyi()
+    c.gilbert()
+main()
