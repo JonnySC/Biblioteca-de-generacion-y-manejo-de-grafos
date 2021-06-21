@@ -1,7 +1,3 @@
-from nodo import nodo 
-from arista import arista
-from grafo import grafo
-from algoritmos 
 from graphviz import Digraph
 import random
 
