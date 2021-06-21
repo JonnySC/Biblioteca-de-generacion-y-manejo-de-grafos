@@ -1,7 +1,9 @@
 from nodo import nodo 
 from arista import arista
 from grafo import grafo
-from graphviz import graphviz
+from algoritmos 
+from graphviz import Digraph
+import random
 
 #Funcion principal de llamado del programa
 def main():
